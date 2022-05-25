@@ -108,22 +108,18 @@ void loop() {
 
   if( millis() - sensorPrevMillis > 2000 || sensorPrevMillis == 0){
     sensorPrevMillis = millis();
-    /*
+  
     float t = temperature();
     double CO = CO_Data();
     double GLP = GLP_Data();
-    */
-    temperature();
-    CO_Data();
-    GLP_Data();
-    /*
+
     if(Firebase.RTDB.getString(&fbdo,path_alarm)){
       alarm_state = fbdo.stringData();
     }
     if((t > 35 || CO > 200 || GLP > 500) && alarm_state == "no"){
       Firebase.RTDB.setString(&fbdo,path_alarm,"si");
       sendMenssage();
-    }*/
+    }
 
   }
 
@@ -162,10 +158,6 @@ float temperature(){
   //Temperatura  Humedad    
   Firebase.RTDB.setString(&fbdo,path_temp,temp);
   Firebase.RTDB.setString(&fbdo,path_humd,humd);
-  Serial.print("temp: ");
-  Serial.println(temp);
-  Serial.print("humd: ");
-  Serial.println(humd);
   //Limpiar el dato
   temp = "";
   humd = "";
@@ -178,8 +170,6 @@ double CO_Data(){
   float RS_CO = 1000*((3.3-voltajeCO)/voltajeCO);
   double CO_value = 97.076*pow(RS_CO/810,-1.532); //Colocar el valor de RoCO, donde pow(RS_CO/Ro_CO,-0.652)
   CO.concat(CO_value);
-  Serial.print("CO: ");
-  Serial.println(voltajeCO);
   //Send Data to DataBase
   Firebase.RTDB.setString(&fbdo,path_CO,CO);
   CO = "";
@@ -192,8 +182,6 @@ double GLP_Data(){
   float RS_GLP = 1000*((5-voltajeGLP)/voltajeGLP);
   double GLP_value = 578.81*pow(RS_GLP/1360,-2.102); //Colocar el valor de RoCO, donde pow(RS_CO/Ro_GLP,-0.652)
   GLP.concat(GLP_value);
-  Serial.print("GLP: ");
-  Serial.println(voltajeGLP);
   //Send Data to DataBase
   Firebase.RTDB.setString(&fbdo,path_GLP,GLP);
   GLP = "";
