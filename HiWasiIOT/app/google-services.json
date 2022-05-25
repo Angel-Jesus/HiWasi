@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "936000562757",
+    "firebase_url": "https://hiwasi2-default-rtdb.firebaseio.com",
+    "project_id": "hiwasi2",
+    "storage_bucket": "hiwasi2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:936000562757:android:f5ea17d187e079b363652c",
+        "android_client_info": {
+          "package_name": "com.example.hiwasiiot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "936000562757-dl2lm7h48dgvov6i4u200tmrkqm10uu3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTCk8O8Kf8QZdAjQxGbCDjR6nn0ZlpSpA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "936000562757-dl2lm7h48dgvov6i4u200tmrkqm10uu3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

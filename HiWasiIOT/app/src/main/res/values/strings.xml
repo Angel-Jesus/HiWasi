@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Hi Wasi IOT</string>
+    <string name="menu_puertas">Puertas</string>
+    <string name="menu_luces">Luces</string>
+    <string name="menu_gases">Gases y Humo</string>
+    <string name="menu_configuracion">Configuracion</string>
+    <string name="menu_connection">Estado de conexion: </string>
+    <string name="txt_light">Cocina</string>
+    <string name="txt_door">Puerta principal</string>
+    <string name="title_light">Luces</string>
+    <string name="title_door">Puertas</string>
+    <string name="title_gass">Gases y Humo</string>
+    <string name="temperatura">Temperatura</string>
+    <string name="humedad">Humedad</string>
+    <string name="glp">Gas natural</string>
+    <string name="co">Monoxido de carbono</string>
+    <string name="title_config">Configuracion</string>
+    <string name="activar_configuracion">Desactivado</string>
+    <string name="encendido">Encendido</string>
+    <string name="apagado">Apagado</string>
+    <string name="solo_un_vez">Solo un vez</string>
+    <string name="cada_dia">Cada dia</string>
+</resources>
